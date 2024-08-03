@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BassPassApplication</title>
+    <link rel="icon" href="./NET.png" width="30px" heigth="30px">
+</head>
+<body>
+    <fieldset>
+        <legend>Aplicant Details</legend>
+        <form action="./response.html" method="post"><br>
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name" placeholder="enter username" pattern="[A-Z]{4,8}" title="the name should be in between 4 to 8 charecters">
+            <center>
+            <lable for="fathers/guardians Name">Fathers/Guardians Name</lable>
+            <input type="text" name="Fathers/Guardians Name" id="fathers/guardians Name"><br>
+            </center>
+            <label for="DOB">Date of Birth</label>ddmmyy
+            <input type="date" name="DOB" id="DOB">
+            <center>
+            <lable for="">Gender</lable>
+            <input type="radio" id="male" name="gender" value="Male">
+            <lable for="male">Male</lable>
+            <input type="radio" id="female" name="gender" value="Feamale">
+            <lable for="feamale">Feamale</lable><br>
+            </center>
+            <label for="age">Age As on</label>
+            <label for="years">Years</label>
+            <input type="text" name="years" id="years" size="1">
+            <lable for="months">Months</lable>
+            <input type="text" name="months" id="months" size="1">
+            <label for="days">Days</label>
+            <input type="text" name="days" id="Days" size="1">
+            <center>
+            <lable for="A.No">Adhaar No</lable>
+            <input type="text" name="AdhaarNo" id="A.No" placeholder="Enter Adhaar No" pattern="[0-9]{4} [0-9]{4} [0-9]{4}"><br>
+            </center>
+            <lable for="phno">Mobile No</lable>
+            <input type="text" name="mobileno" id="phno" pattern="\+91 [6-9]\d{9}"><br>
+            <center>
+            <lable for="email">E-mail id</lable>
+            <input type="email" id="email" name="email"><br>
+            </center>
+            <label for="photo">Photo</label>
+            <input type="file" name="file" id="photo">
+            </fieldset><br>
+        <fieldset>
+        <legend>Residential Adress Details</legend>
+        <lable for="APPADD">Applicant's Address</lable>
+        <textarea name="Applicant Address" id="APPADD"></textarea><br>
+        <center>
+        <lable for="dis">District</lable>
+        <select name="dis" id="dis">
+        <option value="Hyderabad">Hyderabad</option>
+        </select><br>
+        </center>
+        <lable for="City">Mandal</lable><br>
+        <select name="mandel" id="City">
+        <option value="Hyderabad">Hyderabad</option>
+        </select><br>
+        <center>
+        <lable for="Vill">Village</lable>
+        <select name="Vill" id="Vill">
+        <option value="Hyderabad">Hyderabad</option>
+        </select><br>
+        </center>
+        <lable for="PC">Pincode</lable>
+        <input type="number" name="PC" id="PC">
+        
+        
+        
+    </fieldset><br>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <lable for="City">City</lable><br>
+            <select name="City" id="City">
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br>
+            <lable for="PT">Pass Type</lable><br>
+            <select name="PT" id="PT">
+                <option value="---select---">---select---</option>
+                <option value="GREATER PASS">GREATER PASS</option>
+                <option value="GENERAL ORDINARY ROUTE PASS MTLY">GENERAL ORDINARY ROUTE PASS MTLY</option>
+                <option value="GENREL METRO EXPRESS ROUTE PASS MTLY">GENREL METRO EXPRESS ROUTE PASS MTLY</option>
+                <option value="ORDINARY PASS">ORDINARY PASS</option>
+                <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+            </select><br>
+    </fieldset><br>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection</legend>
+        <lable for="PM">Payment Mode</lable><br>
+        <select name="PM" id="PM">
+            <option value="Select Payment Mode>Select Payment Mode">Select Payment Mode</option>
+            <option value="Payment at Counter">Payment at Counter</option>
+        </select><br>
+        <lable for="DM">Pass Delivrey Mode</lable><br>
+        <select name="DM" id="DM">
+            <option value="Select Delivrey Mode >Select Payment Mode">Select Delivrey Mode</option>
+            <option value="at Counter">at Counter</option>
+        </select><br>
+        <lable for="CAWYWTC">Center at which you want to collect pass</lable><br>
+        <select name="CAWYWTC" id="CAWYWTC">
+            <option value="---select---">---select---</option>
+            <option value="RTC ABIDS--HYD [29/07/2024]">RTC ABIDS--HYD [29/07/2024]</option>
+            <option value="RTC AFZALGUNJ--HYD[29/07/2024]">RTC AFZALGUNJ--HYD[29/07/2024]</option>
+            <option value="RTCAIRPORT--HYD [29/07/2024]">RTCAIRPORT--HYD [29/07/2024]</option>
+            <option value="RTC ARMGHAR--HYD [29/07/2024]">RTC ARMGHAR--HYD [29/07/2024]</option>
+        </select><br>
+    </fieldset><br>
+    <input type="submit">
+        </form>
+</body>
+</html>
